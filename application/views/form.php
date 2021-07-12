@@ -14,14 +14,14 @@
                         <div class="card-header">
                             <form method ="POST">
                                 <div class="form-group">
-                                    <label>nama</label>
+                                    <label>Nama</label>
                                     <input type="text" class="form-control" name="nama" id="nama" placeholder="nama">
                                 </div>
                                 <div class="form-group">
-                                    <label>koordinat</label>
+                                    <label>Koordinat</label>
                                     <input type="text" class="form-control" name="coord" id="coord"placeholder="koordinat lokasi">
                                 </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button type="submit" class="btn btn-primary">Tambah</button>
                             </form>
                         </div>
                     </div>
