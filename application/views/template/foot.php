@@ -50,7 +50,7 @@
 <script src="<?= base_url('assets/AdminLTE-3.1.0/') ?>dist/js/pages/dashboard.js"></script>
 <script>
 
-	var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+	var mymap = L.map('mapid').setView([-5.3952574, 105.1984287], 8);
 
 	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 		maxZoom: 18,
