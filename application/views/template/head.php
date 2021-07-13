@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>Tempat Wisata di Bandar Lampung | Dashboard</title>
  
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -43,7 +43,7 @@
         <a class="nav-link" data-widget="pushmenu" href="<?= base_url('assets/AdminLTE-3.1.0/') ?>#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="<?= base_url('assets/AdminLTE-3.1.0/') ?>index3.html" class="nav-link">Home</a>
+        <a href="<?= base_url('assets/AdminLTE-3.1.0/') ?>#" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="<?= base_url('assets/AdminLTE-3.1.0/') ?>#" class="nav-link">Contact</a>
