@@ -57,6 +57,16 @@ class Tamp extends CI_Controller {
 			redirect('Tamp/form');
 		}
 	}
+	public function form2()
+	{	
+
+		$data['data'] = $this->Lok_Model->getloc();
+	
+	
+			$this->load->view('template/head');
+			$this->load->view('form2',$data);
+			$this->load->view('template/foot');
+	}
 
 	public function form3()
 	{	
@@ -80,6 +90,22 @@ class Tamp extends CI_Controller {
 	public function hapus_data($id){
 		$this->Lok_Model->hapusDatalokasi($id);
 		redirect('Tamp/form3');
+
+		$this->load->view('template/head');
+		$this->load->view('template/foot');
+	}
+	public function edit_data($id){
+		$data['data'] = $this->Lok_Model->ambil_id($id);
+
+		
+		$this->load->view('Tamp/form2',$data);
+		$this->load->view('template/head');
+		$this->load->view('template/foot');
+	}
+
+	public function proses_edit_data($id){
+		$this->Lok_Model->proses_edit_data($id);
+		redirect('Tamp/form2');
 
 		$this->load->view('template/head');
 		$this->load->view('template/foot');
