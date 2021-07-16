@@ -39,4 +39,23 @@ class Tamp extends CI_Controller {
 		}
 	}
 
+	public function form2()
+	{	
+		$this->form_validation->set_rules('nama','nama','required');
+		$this->form_validation->set_rules('coord','coord','required');
+		$this->form_validation->set_rules('size','size','required');
+		$this->form_validation->set_rules('opacity','opacity','required');
+		$this->form_validation->set_rules('ring','ring','required');
+		$this->form_validation->set_rules('fill','fill','required');
+	
+		if ($this->form_validation->run()==false){
+			$this->load->view('template/head');
+			$this->load->view('form2');
+			$this->load->view('template/foot');
+		}else{
+			$this->Lok_Model->tambahDatalokasi();
+			redirect('Tamp/form');
+		}
+	}
+
 }
