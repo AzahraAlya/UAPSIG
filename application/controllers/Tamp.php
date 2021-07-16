@@ -39,7 +39,7 @@ class Tamp extends CI_Controller {
 		}
 	}
 
-	public function form2()
+	public function form1()
 	{	
 		$this->form_validation->set_rules('nama','nama','required');
 		$this->form_validation->set_rules('coord','coord','required');
@@ -56,6 +56,25 @@ class Tamp extends CI_Controller {
 			$this->Lok_Model->tambahDatalokasi();
 			redirect('Tamp/form');
 		}
+	}
+
+	public function form3()
+	{	
+
+		$data['data'] = $this->Lok_Model->getloc();
+	
+	
+			$this->load->view('template/head');
+			$this->load->view('form3',$data);
+			$this->load->view('template/foot');
+	}
+
+	public function tambah_data(){
+		$data['data'] = $this->Lok_Model->getloc();
+		$this->load->view('template/head');
+		
+		$this->load->view('Tamp/form',$data);
+		$this->load->view('template/foot');
 	}
 
 }
