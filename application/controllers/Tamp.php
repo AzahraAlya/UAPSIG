@@ -77,4 +77,12 @@ class Tamp extends CI_Controller {
 		$this->load->view('template/foot');
 	}
 
+	public function hapus_data($id){
+		$this->Lok_Model->hapusDatalokasi($id);
+		redirect('Tamp/form3');
+
+		$this->load->view('template/head');
+		$this->load->view('template/foot');
+	}
+
 }
