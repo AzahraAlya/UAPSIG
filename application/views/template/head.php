@@ -101,6 +101,12 @@
                   <p>Form</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="<?= base_url('Tamp/form3') ?>" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Data</p>
+                </a>
+              </li>
               <!-- <li class="nav-item">
                 <a href="<?= base_url('assets/AdminLTE-3.1.0/') ?>./index3.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>

@@ -35,7 +35,7 @@ class Tamp extends CI_Controller {
 			$this->load->view('template/foot');
 		}else{
 			$this->Lok_Model->tambahDatalokasi();
-			redirect('Tamp/form');
+			redirect('Tamp/map2');
 		}
 	}
 
