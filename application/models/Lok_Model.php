@@ -51,4 +51,17 @@ class Lok_Model extends CI_Model
         $this->db->like('nama', $keyword);
         return $this->db->get('data')->result_array();
     }
+
+    public function ambil_id($id){
+        return $this->db->get_where('data',['id_lokasi'=>$id])->row_array();
+	}
+
+    public function proses_edit_data(){
+        $data=[
+            "nama" => $this->input->post('nama'),
+            "coord" => $this->input->post('coord')
+        ];
+        $this->db->where('id_lokasi', $this->input->post('id_lokasi'));
+        $this->db->update('data',$data);
+	}
 }
